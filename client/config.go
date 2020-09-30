@@ -9,6 +9,7 @@ import (
 type Config struct {
 	LocalAddr    string `json:"localaddr"`
 	RemoteAddr   string `json:"remoteaddr"`
+	RemoteAddrTCP string `json:"remoteaddrtcp"`
 	Key          string `json:"key"`
 	Crypt        string `json:"crypt"`
 	Mode         string `json:"mode"`
@@ -35,6 +36,8 @@ type Config struct {
 	Log          string `json:"log"`
 	SnmpLog      string `json:"snmplog"`
 	SnmpPeriod   int    `json:"snmpperiod"`
+	Bypass       bool   `json:"bypass"`
+	NoBypass     bool   `json:"nobypass"`
 	Quiet        bool   `json:"quiet"`
 	TCP          bool   `json:"tcp"`
 }
